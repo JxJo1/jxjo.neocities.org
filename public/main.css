@@ -11,7 +11,9 @@
 }
 
 :root {
-  --background-image: url("assets/img/bg/background.jpg");
+  --bg-image: url("assets/img/bg/background.jpg");
+  --bgcolor-dark-mode: #000000;
+  --bgcolor-light-mode: #000000;
   --light-mode-text: #000000;
   --dark-mode-text: #ffffffe6;
   color-scheme: dark;
@@ -23,11 +25,11 @@
 }
 
 body {
-  background-image: var(--background-image); 
+  background-image: var(--bg-image); 
   color: var(--dark-mode-text);
   font-family: "Inconsolata";
   animation-name: slide;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -48,7 +50,7 @@ body {
 }
 
 .about-me .pfp-ref {
-  padding: auto;
+  margin: auto;
 }
 
 .about-me .text p {
@@ -65,6 +67,7 @@ body {
 
 .site-nav-bar {
   text-align: center;
+  border-bottom: 1px solid white;
 }
 
 .site-nav-bar a {
@@ -87,9 +90,11 @@ body {
 }
 
 
+
 #logo {
-  text-align: center;
   padding: 10px;
+  width: 430px;
+  margin: auto;
 }
 
 footer {
