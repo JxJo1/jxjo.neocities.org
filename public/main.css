@@ -2,7 +2,7 @@
   font-family: "Inconsolata";
   font-style: normal;
   font-weight: 500;
-  src: url("/public/font/Inconsolata.ttf"),
+  src: url("font/Inconsolata.ttf"),
 }
 
 @keyframes slide {
@@ -11,7 +11,7 @@
 }
 
 :root {
-  --background-image: url("/public/assets/img/bg/background.jpg");
+  --background-image: url("assets/img/bg/background.jpg");
   --light-mode-text: #000000;
   --dark-mode-text: #ffffffe6;
   color-scheme: dark;
