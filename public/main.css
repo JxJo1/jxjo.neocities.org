@@ -2,7 +2,7 @@
   font-family: "Inconsolata";
   font-style: normal;
   font-weight: 500;
-  src: url("/public/assets/font/Inconsolata.ttf"),
+  src: url("/public/font/Inconsolata.ttf"),
 }
 
 @keyframes slide {
@@ -13,22 +13,26 @@
 :root {
   --background-image: url("/public/assets/img/bg/background.jpg");
   --light-mode-text: #000000;
-  --dark-mode-text: #FFFFFF;
+  --dark-mode-text: #ffffffe6;
+  color-scheme: dark;
 }
 
 
-
+@media (prefers-color-scheme: light) {
+   
+}
 
 body {
   background-image: var(--background-image); 
   color: var(--dark-mode-text);
   font-family: "Inconsolata";
   animation-name: slide;
-  animation-duration: 7s;
+  animation-duration: 12s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  
 }
+
+
 
 .main {
   background-color:#000000ae;
@@ -36,34 +40,38 @@ body {
   width: 1000px;
   height: auto;
   margin: auto;
+  padding: 19px;
 }
 
-.general {
-  border: 1px solid white;  
-  margin: 40px;
+.about-me {
+  display: flex;
 }
 
-.about-me img {
+.about-me .pfp-ref {
+  padding: auto;
+}
+
+.about-me .text p {
+  font-size: 22px;
+}
+.about-me .text {
+  width: 780px;
+}
+
+.projects {
   
-}
-
-.separator {
-  border: 1px solid var(--dark-mode-text);
-  height: 10px;
-  width: 1px
 }
 
 
 .site-nav-bar {
   text-align: center;
-  border-bottom: 2px solid var(--dark-mode-text);
 }
 
 .site-nav-bar a {
   text-decoration: none;
   color: var(--whiteTxtColor);
   font-size: 25px;
-  margin: 20px;
+  margin: 15px;
 }
 
 .site-nav-bar a:hover {
@@ -84,3 +92,6 @@ body {
   padding: 10px;
 }
 
+footer {
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+
+
+
+.DS_Store
+Thumbs.db
+
+# neocities doesn't allow them
+public/assets/music/*
+*.mp3
+
+
+# WIP
+public/assets/img/88x31
+pages/
+public/script.js 
