@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Inconsolata";
   font-style: normal;
+  font-weight: 500;
   src: url("font/Inconsolata.ttf"),
 }
 
@@ -11,25 +12,29 @@
 
 :root {
   --bg-image: url("assets/img/bg/background.jpg");
+  --bgcolor-dark-mode: #000000;
+  --bgcolor-light-mode: #000000;
+  --light-mode-text: #000000;
   --dark-mode-text: #ffffffe6;
+  color-scheme: dark;
 }
 
-@keyframes slide {
-    from {background-position: 0px 0px;}
-    to {background-position: -256px 256px;}
-}
 
+@media (prefers-color-scheme: light) {
+   
+}
 
 body {
   background-image: var(--bg-image); 
- /* background-image: linear-gradient(to bottom, #002fff7c, #003f917c); */
   color: var(--dark-mode-text);
   font-family: "Inconsolata";
   animation-name: slide;
-  animation-duration: 20s;
+  animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+
 
 .main {
   background-color:#000000ae;
@@ -37,78 +42,12 @@ body {
   width: 1000px;
   height: auto;
   margin: auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 3fr 3fr; 
-  grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 1fr; 
-  grid-template-areas: 
-  'grid-main-header grid-main-header'
-  'grid-about grid-about'
-  'grid-projects grid-blog'
-  'grid-clock grid-music-player'
-  'grid-contact grid-contact'
-  'grid-links-and-btns grid-links-and-btns'
-  ;
-  gap: 20px;
+  padding: 19px;
 }
-
-.logo {
-  padding: 10px;
-  width: 430px;
-  margin: auto;
-}
-
-footer {
-  text-align: center;
-}
-
-
-.main > div {
-  border: 2px solid white;
-}
-
-.main > div:nth-last-child(-n + 7) {
-  padding: 10px;
-}
-
-.main-header {
-  grid-area: grid-main-header;
-}
-
 
 .about-me {
   display: flex;
-  grid-area: grid-about;
-  
 }
-
-.blog {
-  grid-area: grid-blog;
-}
-
-.clock {
-  grid-area: grid-clock;
-}
-
-.clock p {
-  font-size: 20px;
-  text-align: center;
-}
-
-.music-player {
-  grid-area: grid-music-player;
-}
-
-.music-player button {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-}
-
-.contact-and-links {
-  grid-area: grid-contact;
-  font-size: 20px;
-}
-
 
 .about-me .pfp-ref {
   margin: auto;
@@ -122,30 +61,24 @@ footer {
 }
 
 .projects {
-  grid-area: grid-projects;
-}
-.projects a {
-  text-decoration: none;
-  color: #0465ec;
-}
-.projects a:hover {
-  font-weight: bold;
+  
 }
 
 
 .site-nav-bar {
   text-align: center;
+  border-bottom: 1px solid white;
 }
 
 .site-nav-bar a {
   text-decoration: none;
-  color: white;
+  color: var(--whiteTxtColor);
   font-size: 25px;
   margin: 15px;
 }
 
 .site-nav-bar a:hover {
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 .site-nav-bar li {
@@ -158,20 +91,12 @@ footer {
 
 
 
-
-.links-and-buttons {
-  grid-area: grid-links-and-btns;
+#logo {
+  padding: 10px;
+  width: 430px;
+  margin: auto;
 }
 
-.links-and-buttons p {
-  font-size: 18px;
+footer {
+  text-align: center;
 }
-
-.links-and-buttons li {
-  list-style-type: none;
-  display:inline;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-

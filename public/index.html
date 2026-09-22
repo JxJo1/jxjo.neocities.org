@@ -19,107 +19,70 @@ Feel free to take inspiration from either the website layout or the html and the
   </head>
 
   <body>
+    <script src="script.js"></script>
     <div class="main">
-      <div class="main-header">
-        <div class="header">
-          <div class="logo"><a href="index.html"><img src="assets/img/logo.gif" id="animated-logo" width="430" height="80"></a></div>
-       </div>
-        <nav class="site-nav-bar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html" style="color:#3f3f3f">About Me (wip)</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div class="header"><div id="logo"><a href="index.html"><img src="assets/img/logo.gif" width="430" height="80"></a></div></div>
+      <nav class="site-nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="index.html">OC Gallery</a></li>
+          <li><a href="index.html">Extras</a></li>
+        </ul>
+      </nav>
      <div class="about-me">
         <div class="text">
-          <h1>You have stumbled upon this website page of <span style="color:#04AFEC">Jojo</span></h1>
-          <p>Hey there! Welcome to this website. My name is Jojo <span style="font-size: 15px">(he/they)</span>, i am known<br> online as <b>JxJo</b>. 
-          I write code, develop, design stuff and mess<br> around with computers. I've been working on this site since 2025 as<br>
-          a way to express myself creatively & to share my work and this is what i like to call my personal little corner  
-          of the web. Feel free to explore my work, projects, blogs and
-          some other cool things i have that i want to share.
+          <h1>You have stumbled upon this website page of <span>Jojo</span></h1>
+<<<<<<< HEAD
+          <p>website still under construction lol</p>
+=======
+          <p>Hey there! Welcome to this website. My name is Jojo, i am known<br> online as <b>JxJo</b>. I write code, develop stuff, design stuff and mess<br>
+          around with computers. This is what i like to call my personal little<br> corner  
+          of the web, feel free to explore my work, projects, blogs and<br>
+          some other cool things i have that i want to show. If you want to learn
+          more about me, <a href="about.html">click here!</a>
           </p>
-          
-          <p>This website is still work-in-progress, so some pages or parts of it might be incomplete or a mess! Be warned that it's not mobile friendly yet</p>
+>>>>>>> e559c15 (add the domain to my discord connections)
         </div>
         <div class="pfp-ref">
-          <img src="assets/img/ref/marshall-lee.jpg" width="150" height="150" alt="he's literally me irl btw">
+          <img src="assets/img/ref/marshall-lee.jpg" width="150" height="150">
         </div>
 
      </div>
      <div class="projects">
-      <h1>Projects</h1>
+      <h1><a href="#">Projects</a></h1>
       <article>
         <h2><a href="https://github.com/JxJo1/lua-coreutils">lua-coreutils</a></h2>
         <p>A work in progress reimplementation of GNU Coreutils commands in Lua</p>
 
         <h2><a href="https://www.roblox.com/games/18440674891/epik-calculator-v1">epik calculator</a></h2>
         <p>A simple roblox game that involves 5 different operations on the calculator</p>
-
       </article>
-     </div>
-     <div class="blog">
-       <h1>Blog</h1>
-       <p>coming soon :3</p>
      </div>
      <div class="clock">
       <h1>Timezone</h1>
-      <p id="current-time">It is currently 12:00:00 PM for me!<br>Asia/Qatar (GMT+3)</p>
-      <script src="js/clock.js"></script>
+      <b style="font-size: 30px;" id="current-time">12:00:00 PM</b>
      </div>
      <div class="music-player">
-      <h1>Music Player</h1>
-      <p id="song">Song Name - Artist</p>
-      <button onclick="playMusic()"><img src="assets/img/play.png" id="play-btn"></button>
-      <button onclick="pauseMusic()"><img src="assets/img/pause.png" id="pause-btn"></button>
-      <input id="vol-slider" type="range">
-      <audio id="musictag" src=""></audio>
-      <script src="js/musicPlayer.js"></script>
+
      </div>
-     <div class="contact-and-links">
+     <div class="socials-and-links">
       <h1>Contact</h1>
-      <p>If you wish to contact me, get in touch with me or just to simply say hi, feel free to check out the links & platforms below!</p>
-      <ul>
-        <li><b>Email:</b> <a href="mailto:imjustjxjo@gmail.com" target="_blank" style="color:#ff4848">imjustjxjo@gmail.com</a></li>
-        <li><b>Discord:</b> <a href="https://discord.com/users/1019645754056396902" style="color: #7289DA" target="_blank">imjxjo.</a></li>
-        <li><b>Signal:</b> <a href="https://signal.me/#eu/QZ31hLRHS-o5UAsyY5rTcgGsnJdNT-QxHSVNWUNvY5pDDkCwRvNLr79cgbwQUXJb" style="color: #3A76F0" target="_blank">imjxjo.10</a></li>
-        <li style="color: #424242"><del>Twitter</del> (i no longer use this website anymore, <a href="https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk" style="color: #424242;">neither should you</a>)</li>
-        <li><b>Youtube:</b> <a href="https://www.youtube.com/@JustJxJo" target="_blank" style="color: #ff2200">JxJo</a></li>
-        <li><b>Github:</b> <a href="https://github.com/JxJo1" target="_blank" style="color: #6E40C9">JxJo1</a></li>
-        <li><b>Matrix:</b> <a href="https://matrix.to/#/@imjxjo:tchncs.de" target="_blank" style="color:#24b441">@imjxjo:tchncs.de</a></li>
-        <li><b>Steam:</b> <a href="https://steamcommunity.com/id/ImJxJ0" target="_blank" style="color: #66c0f4">ImJxJ0</a></li>
-      </ul>
-     </div>
-     <div class="links-and-buttons"><h1>Friends & Buttons :3</h1>
-      <p>Here are some 88x31 buttons i put for some decoration and for some fun!<br>
-        There are links to my friends websites' & other cool people, maybe you should check them out :3
-      </p>
-        <ul>
-        <li><a style="color: #ffff00;" href="https://mediumkey.xyz">Mediumkey</a></li>
-        <li><a style="color: #848E94;"  href="https://deaen.github.io">deaen</a></li>
-        <li><a style="color: #ffc0cb"  href="https://reiko.app ">Reiko</a></li>
-        <li><a style="color: #04AFEC" href="https://caisartemporium.peposerver.com ">Caius</a></li>
-        <li><a style="color: #E2B7F4" href="https://petrtech.dev">PetrTech</a></li>
-        <li><a style="color:#bbf836" href="https://240109.xyz">Simon</a></li>
-        <li><a style="color: #00ff22" href="https://jaidenmacintosh.net">jaiden</a></li>
-        <li><a style="color: #d900ff" href="https://jovann.me">JovannMC</a></li>
-        <li><a style="color: #43256E;" href="https://purpleismycomfortcolor.neocities.org">maya</a></li>
-        <li><a style="color: #24B8F5;" href="https://frankiefms.com/">FrankieFms</a></li>
-        <li><a style="color: azure" href="https://nijika.dev/">eri</a></li>
-        <li><a style="color: rebeccapurple" href="https://starfield.nekoweb.org/main.html">kapyu</a></li>
-        </ul>
-        <div class="88x31-btns">
-          <img src="assets/img/88x31/queercoded.png">
-          <img src="assets/img/88x31/autism.png">
-          <img src="assets/img/88x31/bi.png">
-          <img src="assets/img/88x31/transrights.gif">
-          <a href="https://en.wikipedia.org/wiki/ACAB" target="_blank"><img src="assets/img/88x31/acab.gif"></a>
-        </div>
+           <ul>
+              <li><b>Discord:</b> <a href="https://discord.com/users/1019645754056396902" target="_blank">imjxjo.</a></li>
+              <li><b>Signal:</b> imjxjo.10</li>
+              <li><b>Youtube channel:</b> <a href="" target="_blank">JxJo</a></li>
+              <li><b>Github:</b> <a href="" target="_blank">JxJo1</a></li>
+              <li><b>Bluesky:</b> <a href="" target="_blank">jxjo.bsky.social</a></li>
+              <li><b>Steam:</b> <a href="" target="_blank">/ImJxJ0</a></li>
+              <li><b>Email:</b> <a href="mailto:imjustjxjo@gmail.com" target="_blank">imjustjxjo@gmail.com</a></li>
+            </ul>
      </div>
     </div>
   <footer>
-    (c) 2026 JxJo. All wrongs reserved <b>•</b> Coded with <3 <b>•</b> powered by <a href="https://neocities.org" target="_blank" style="color:#00ff22">neocities</a> <b>•</b>Website last updated: 25/06/2026 <b>•</b> This website is <a href="https://github.com/JxJo1/jxjo.neocities.org" style="color:#ff9900">open-source</a>
+    (c) 2026 JxJo. All wrongs reserved <b>•</b> Coded with <3 <b>•</b> Website last updated: 25/06/2026 <b>•</b> This website is <a href="https://github.com/JxJo1/jxjo.neocities.org">open-source</a>
   </footer>
   </body>
 </html>
