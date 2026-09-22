@@ -19,53 +19,60 @@ Feel free to take inspiration from either the website layout or the html and the
   </head>
 
   <body>
-    <script src="script.js"></script>
     <div class="main">
-      <div class="header"><div id="logo"><a href="index.html"><img src="assets/img/logo.gif" width="430" height="80"></a></div></div>
-      <nav class="site-nav-bar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="index.html">Blog</a></li>
-          <li><a href="index.html">OC Gallery</a></li>
-          <li><a href="index.html">Extras</a></li>
-        </ul>
-      </nav>
+      <div class="main-header">
+        <div class="header">
+          <div class="logo"><a href="index.html"><img src="assets/img/logo.gif" id="animated-logo" width="430" height="80"></a></div>
+       </div>
+        <nav class="site-nav-bar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" style="color:#3f3f3f">About Me (wip)</a></li>
+          </ul>
+        </nav>
+      </div>
      <div class="about-me">
         <div class="text">
-          <h1>You have stumbled upon this website page of <span>Jojo</span></h1>
-          <p>Hey there! Welcome to this website. My name is Jojo, i am known<br> online as <b>JxJo</b>. I write code, develop stuff, design stuff and mess<br>
-          around with computers. This is what i like to call my personal little<br> corner  
-          of the web, feel free to explore my work, projects, blogs and<br>
-          some other cool things i have that i want to show. If you want to learn
-          more about me, <a href="about.html">click here!</a>
+          <h1>You have stumbled upon this website page of <span style="color:#04AFEC">Jojo</span></h1>
+          <p>Hey there! Welcome to this website. My name is Jojo <span style="font-size: 15px">(he/they)</span>, i am known<br> online as <b>JxJo</b>. 
+          I write code, develop, design stuff and mess<br> around with computers. I've been working on this site since 2025 as<br>
+          a way to express myself creatively & to share my work and this is what i like to call my personal little corner  
+          of the web. Feel free to explore my work, projects, blogs and
+          some other cool things i have that i want to share.
           </p>
+          
+          <p>This website is still work-in-progress, so some pages or parts of it might be incomplete or a mess! Be warned that it's not mobile friendly yet</p>
         </div>
         <div class="pfp-ref">
-          <img src="assets/img/ref/marshall-lee.jpg" width="150" height="150">
+          <img src="assets/img/ref/marshall-lee.jpg" width="150" height="150" alt="he's literally me irl btw">
         </div>
 
      </div>
      <div class="projects">
-      <h1><a href="#">Projects</a></h1>
+      <h1>Projects</h1>
       <article>
         <h2><a href="https://github.com/JxJo1/lua-coreutils">lua-coreutils</a></h2>
         <p>A work in progress reimplementation of GNU Coreutils commands in Lua</p>
 
         <h2><a href="https://www.roblox.com/games/18440674891/epik-calculator-v1">epik calculator</a></h2>
         <p>A simple roblox game that involves 5 different operations on the calculator</p>
+
       </article>
+     </div>
+     <div class="blog">
+       <h1>Blog</h1>
+       <p>coming soon :3</p>
      </div>
      <div class="clock">
       <h1>Timezone</h1>
-      <b style="font-size: 30px;" id="current-time">12:00:00 PM</b>
+      <p id="current-time">It is currently 12:00:00 PM for me!<br>Asia/Qatar (GMT+3)</p>
+      <script src="js/clock.js"></script>
      </div>
      <div class="music-player">
       <h1>Music Player</h1>
       <p>WIP</p>
      </div>
-     <div class="socials-and-links">
+     <div class="contact-and-links">
       <h1>Contact</h1>
       <p>If you wish to contact me, get in touch with me or just to simply say hi, feel free to check out the links & platforms below!</p>
       <ul>
@@ -100,7 +107,7 @@ Feel free to take inspiration from either the website layout or the html and the
      </div>
     </div>
   <footer>
-    (c) 2026 JxJo. All wrongs reserved <b>•</b> Coded with <3 <b>•</b> Website last updated: 25/06/2026 <b>•</b> This website is <a href="https://github.com/JxJo1/jxjo.neocities.org">open-source</a>
+    (c) 2026 JxJo. All wrongs reserved <b>•</b> Coded with <3 <b>•</b> powered by <a href="https://neocities.org" target="_blank" style="color:#00ff22">neocities</a> <b>•</b>Website last updated: 25/06/2026 <b>•</b> This website is <a href="https://github.com/JxJo1/jxjo.neocities.org" style="color:#ff9900">open-source</a>
   </footer>
   </body>
 </html>
