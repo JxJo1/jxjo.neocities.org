@@ -9,14 +9,17 @@
     to {background-position: -256px 256px;}
 }
 
-:root {
-  --bg-image: url("assets/img/bg/background.jpg");
-  --dark-mode-text: #ffffffe6;
-}
-
+/*
 @keyframes slide {
     from {background-position: 0px 0px;}
     to {background-position: -256px 256px;}
+}
+*/
+
+
+:root {
+  --bg-image: url("assets/img/bg/background.jpg");
+  --dark-mode-text: #ffffffe6;
 }
 
 
@@ -33,24 +36,32 @@ body {
 
 .main {
   background-color:#000000ae;
-  border: 1px solid white;
+  border: 2px solid white;
   width: 1000px;
   height: auto;
   margin: auto;
   padding: 20px;
+}
+
+.main-content {
   display: grid;
   grid-template-columns: 3fr 3fr; 
-  grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 1fr; 
+  grid-template-rows: 1fr 0.5fr 0.5fr 1fr; 
   grid-template-areas: 
-  'grid-main-header grid-main-header'
   'grid-about grid-about'
   'grid-projects grid-blog'
   'grid-clock grid-music-player'
   'grid-contact grid-contact'
   'grid-links-and-btns grid-links-and-btns'
   ;
-  gap: 20px;
+  gap: 20px
 }
+
+.main-content > div {
+  border: 2px solid white;
+  padding: 15px;
+}
+
 
 .logo {
   padding: 10px;
@@ -62,17 +73,14 @@ footer {
   text-align: center;
 }
 
-
-.main > div {
-  border: 2px solid white;
-}
-
 .main > div:nth-last-child(-n + 7) {
   padding: 10px;
 }
 
 .main-header {
   grid-area: grid-main-header;
+  margin-bottom: 20px;
+  border: 2px solid white;
 }
 
 
@@ -91,8 +99,7 @@ footer {
 }
 
 .clock p {
-  font-size: 20px;
-  text-align: center;
+  font-size: 1.4rem;
 }
 
 .music-player {
@@ -101,16 +108,19 @@ footer {
 
 .contact-and-links {
   grid-area: grid-contact;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
+.contact-and-links a:hover {
+  font-weight: bold;
+}
 
 .about-me .pfp-ref {
   margin: auto;
 }
 
 .about-me .text p {
-  font-size: 22px;
+  font-size: 1.4rem;
 }
 .about-me .text {
   width: 780px;
@@ -120,10 +130,13 @@ footer {
   grid-area: grid-projects;
 }
 .projects a {
-  text-decoration: none;
-  color: #0465ec;
+  color: white;
+}
+.projects p {
+  font-size: 1.2rem;
 }
 .projects a:hover {
+  color: #4578fa;
   font-weight: bold;
 }
 
@@ -135,7 +148,7 @@ footer {
 .site-nav-bar a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 1.75rem;
   margin: 15px;
 }
 
@@ -156,14 +169,41 @@ footer {
 }
 
 .links-and-buttons p {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .links-and-buttons li {
   list-style-type: none;
   display:inline;
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.links-and-buttons li:hover {
   font-weight: bold;
 }
 
 
+
+.about-section .draft-images {
+  display:grid;
+  grid-template-columns: 3fr 3fr; 
+  grid-template-rows: 0.5fr 1fr; 
+  gap: 10px;
+}
+
+.about-section p {
+  font-size: 1.3rem;
+}
+.about-section li {
+  font-size: 1.2rem;
+}
+
+.about-section a { 
+  color: white;
+}
+
+
+
+.about-section a:hover { 
+  color: #4578fa;
+}
